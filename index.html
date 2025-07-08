@@ -19,108 +19,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            filter: brightness(0.3);
-        }
-
-        .hero-slide {
-            position: relative;
-            height: 600px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-
-        .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 30%;
-            transform: translateY(-50%);
-            color: white;
-            text-align: right;
-            z-index: 1;
-            width: 40vw !important;
-        }
-
-        .channel-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .channel-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-
-        .flag-item {
-            transition: transform 0.3s ease;
-            height: 100px;
-            width: 100% !important;
-        }
-        .flag-item img{
-            height: 100px;
-            width: 100% !important;
-        }
-        .flag-item:hover {
-            transform: scale(1.1);
-        }
-
-        .navbar-mobile {
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-        }
-
-        .navbar-mobile.active {
-            transform: translateX(0);
-        }
-    </style>
+   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="bg-gray-900 text-white">
+<body class="bg-white text-[#6d55a1]">
     <!-- Header -->
-    <header class="bg-black py-2">
+    <header class="bg-white py-2 border-b border-gray-200">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center text-sm">
                 <div class="flex items-center space-x-4 space-x-reverse">
-                    <a href="#" class="text-blue-400 hover:text-blue-300">
+                    <a href="#" class="text-blue-600 hover:text-blue-400">
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a href="#" class="text-pink-400 hover:text-pink-300">
+                    <a href="#" class="text-pink-600 hover:text-pink-400">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="text-red-400 hover:text-red-300">
+                    <a href="#" class="text-red-600 hover:text-red-400">
                         <i class="fab fa-youtube"></i>
                     </a>
                 </div>
                 <div class="flex items-center space-x-6 space-x-reverse">
-                    <span class="text-gray-300">
+                    <span class="text-gray-700">
                         <i class="fas fa-phone ml-2"></i>
                         +968 1234 5678
                     </span>
-                    <span class="text-gray-300">
+                    <span class="text-gray-700">
                         <i class="fas fa-map-marker-alt ml-2"></i>
-                        مسقط، عُمان
+                        السعوديه - الرياض
                     </span>
                 </div>
             </div>
@@ -128,86 +53,89 @@
     </header>
 
     <!-- Navbar -->
-    <nav class="bg-gray-800 py-4 sticky top-0 z-50">
+    <nav class="bg-white py-4 sticky top-0 z-50 border-b border-gray-200">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
-                <div class="text-2xl font-bold text-blue-400">
-                   <img src="./assets/imgs/صدي4.png" alt="logo" class="w-20 h-10">
+                <div class="text-2xl font-bold text-blue-600">
+                    <img src="./assets/imgs/صدي4.png" alt="logo" class="w-20 h-10">
                 </div>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8 space-x-reverse">
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">الرئيسية</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">من نحن</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">اتصل بنا</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">اعلن معنا</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">شركاؤنا</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">شارك موهبتك</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">سياسة الخصوصية</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">ما الجديد</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">البودكاست</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">شارك رأيك (عالم 2034)</a>
+                    <a href="index.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">الرئيسية</a>
+                    <!-- <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">من نحن</a> -->
+                    <!-- <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">اتصل بنا</a> -->
+                    <a href="advertise.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">اعلن معنا</a>
+                    <a href="partners.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شركاؤنا</a>
+                    <!-- <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شارك موهبتك</a> -->
+                    <!-- <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">سياسة الخصوصية</a> -->
+                    <a href="whats-new.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">ما الجديد</a>
+                    <a href="podcasts.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">البودكاست</a>
+                    <a href="opinion.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شارك رأيك (كأس العالم 2034)</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-white">
+                <button id="mobile-menu-btn" class="md:hidden text-[#6d55a1]">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="navbar-mobile fixed top-0 right-0 h-full w-64 bg-gray-800 shadow-lg z-50">
+        <div id="mobile-menu"
+            class="navbar-mobile fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 border-l border-gray-200">
             <div class="p-4">
                 <div class="flex justify-between items-center mb-6">
-                    <div class="text-xl font-bold text-blue-400">صدى</div>
-                    <button id="close-menu" class="text-white">
+                    <div class="text-xl font-bold text-blue-600">صدى</div>
+                    <button id="close-menu" class="text-[#6d55a1]">
                         <i class="fas fa-times text-xl"></i>
                     </button>
                 </div>
                 <div class="flex flex-col space-y-4">
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">الرئيسية</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">من نحن</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">اتصل بنا</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">اعلن معنا</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">شركاؤنا</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">شارك موهبتك</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">سياسة الخصوصية</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">ما الجديد</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">البودكاست</a>
-                    <a href="#" class="text-white hover:text-blue-400 transition-colors">شارك رأيك (عالم 2034)</a>
+                    <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">الرئيسية</a>
+                    <!-- <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">من نحن</a> -->
+                    <!-- <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">اتصل بنا</a> -->
+                    <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">اعلن معنا</a>
+                    <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شركاؤنا</a>
+                    <!-- <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شارك موهبتك</a> -->
+                    <!-- <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">سياسة الخصوصية</a> -->
+                    <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">ما الجديد</a>
+                    <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">البودكاست</a>
+                    <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شارك رأيك (عالم 2034)</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Slider -->
-    <section class="hero-slider">
+    <section class="hero-slider relative" style="z-index:1;">
         <div class="swiper heroSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="https://sadaa.tv/wp-content/uploads/2025/05/banner-02.jpg" alt="hero-slide" class="w-full h-full object-cover">
+                    <img src="./assets/imgs/slide1.jpg" alt="hero-slide" class="w-full h-full object-cover">
                     <div class="hero-slide">
                         <div class="hero-content">
-                            <h1 class="text-5xl font-bold mb-4">مرحباً بكم في صدى</h1>
-                            <p class="text-xl mb-6">اكتشف عالم من المحتوى المتنوع عبر 12 قناة فضائية</p>
+                            <h1 class="text-5xl font-bold mb-4 text-white"> مجموعه صدى الاعلاميه </h1>
+                            <p class="text-xl mb-6 text-white">
+                                حيث يرتقى الصوت بالكلمه ، ويصنع الاعلاميون الفرق ، انضم الينا وكن صوتا يلهم ، وموهبه تضئ
+                                طريق الاعلام
+                            </p>
                             <button
-                                class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
+                                class="bg-[#6d55a1] hover:bg-cyan-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
                                 استكشف القنوات
                             </button>
                         </div>
                     </div>
                 </div>
-               
                 <div class="swiper-slide">
-                    <img src="https://sadaa.tv/wp-content/uploads/2025/05/banner-01.jpg" alt="hero-slide" class="w-full h-full object-cover">
+                    <img src="./assets/imgs/slide2.jpg" alt="hero-slide" class="w-full h-full object-cover">
                     <div class="hero-slide" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <div class="hero-content">  
-                            <h1 class="text-5xl font-bold mb-4">شارك موهبتك</h1>
-                            <p class="text-xl mb-6">انضم إلينا وشارك موهبتك مع العالم</p>
+                        <div class="hero-content">
+                            <h1 class="text-5xl font-bold mb-4 text-white">شارك موهبتك</h1>
+                            <p class="text-xl mb-6 text-white">انضم إلينا وشارك موهبتك مع العالم</p>
                             <button
-                                class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
+                                class="bg-[#6d55a1] hover:bg-cyan-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
                                 سجل الآن
                             </button>
                         </div>
@@ -218,173 +146,213 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
+        <!-- Netflix-style SVG Curve -->
+        <div class="absolute left-0 right-0 bottom-0 w-full overflow-hidden leading-none pointer-events-none"
+            style="z-index:2;">
+            <svg viewBox="0 0 1920 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full ">
+                <path d="M0 40 Q 480 0 960 40 T 1920 40 V180 H0V40Z" fill="#6d55a1" />
+                <path d="M0 40 Q 480 0 960 40 T 1920 40" fill="none" stroke="#e50914" stroke-width="4" />
+            </svg>
+        </div>
     </section>
 
     <!-- Channels Section -->
-    <section class="py-16 bg-gray-800">
+    <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12">قنواتنا الفضائية</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-[#6d55a1]">قنواتنا الفضائية</h2>
+            <div class="channels-carousel flex overflow-x-auto gap-6 md:grid md:grid-cols-4 md:gap-8 pb-4 md:pb-0">
                 <!-- Channel 1 -->
-                <div class="channel-card bg-gray-700 rounded-lg overflow-hidden">
-                    <img src="https://sadaa.tv/wp-content/uploads/2025/05/s3.jpeg" alt="قناة 1"
-                        class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">قناة صدى الأولى</h3>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">شاهد الآن</a>
+                <div
+                    class="channel-card-modern min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-xl relative overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="./assets/imgs/الاقتصادية.png" alt="قناة 1"
+                        class="w-full h-48 object-cover transition-all duration-300 group-hover:brightness-75">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#6d55a1]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white drop-shadow">قناة صدى الأولى</h3>
+                        <a href="#"
+                            class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full font-semibold shadow-lg transition-colors mb-2">شاهد
+                            الآن</a>
                     </div>
                 </div>
-
                 <!-- Channel 2 -->
-                <div class="channel-card bg-gray-700 rounded-lg overflow-hidden">
-                    <img src="https://sadaa.tv/wp-content/uploads/2025/05/s4.jpeg" alt="قناة 2"
-                        class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">قناة صدى الثانية</h3>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">شاهد الآن</a>
+                <div
+                    class="channel-card-modern min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-xl relative overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="./assets/imgs/الاقتصادية2.png" alt="قناة 2"
+                        class="w-full h-48 object-cover transition-all duration-300 group-hover:brightness-75">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#6d55a1]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white drop-shadow">قناة صدى الثانية</h3>
+                        <a href="#"
+                            class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full font-semibold shadow-lg transition-colors mb-2">شاهد
+                            الآن</a>
                     </div>
                 </div>
-
                 <!-- Channel 3 -->
-                <div class="channel-card bg-gray-700 rounded-lg overflow-hidden">
-                    <img src="https://sadaa.tv/wp-content/uploads/2025/05/s5.jpeg" alt="قناة 3"
-                        class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">قناة صدى الثالثة</h3>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">شاهد الآن</a>
+                <div
+                    class="channel-card-modern min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-xl relative overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="./assets/imgs/القرأن الكريم.png" alt="قناة 3"
+                        class="w-full h-48 object-cover transition-all duration-300 group-hover:brightness-75">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#6d55a1]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white drop-shadow">قناة صدى الثالثة</h3>
+                        <a href="#"
+                            class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full font-semibold shadow-lg transition-colors mb-2">شاهد
+                            الآن</a>
                     </div>
                 </div>
-
                 <!-- Channel 4 -->
-                <div class="channel-card bg-gray-700 rounded-lg overflow-hidden">
-                    <img src="https://sadaa.tv/wp-content/uploads/2025/05/s6.jpeg" alt="قناة 4"
-                        class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">قناة صدى الرابعة</h3>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">شاهد الآن</a>
+                <div
+                    class="channel-card-modern min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-xl relative overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="./assets/imgs/الملاعب.png" alt="قناة 4"
+                        class="w-full h-48 object-cover transition-all duration-300 group-hover:brightness-75">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#6d55a1]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white drop-shadow">قناة صدى الرابعة</h3>
+                        <a href="#"
+                            class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full font-semibold shadow-lg transition-colors mb-2">شاهد
+                            الآن</a>
                     </div>
                 </div>
-
                 <!-- Channel 5 -->
-                <div class="channel-card bg-gray-700 rounded-lg overflow-hidden">
-                    <img src="https://sadaa.tv/wp-content/uploads/2025/05/s7.jpeg" alt="قناة 5"
-                        class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">قناة صدى الخامسة</h3>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">شاهد الآن</a>
+                <div
+                    class="channel-card-modern min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-xl relative overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="./assets/imgs/الملاعب2.png" alt="قناة 5"
+                        class="w-full h-48 object-cover transition-all duration-300 group-hover:brightness-75">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#6d55a1]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white drop-shadow">قناة صدى الخامسة</h3>
+                        <a href="#"
+                            class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full font-semibold shadow-lg transition-colors mb-2">شاهد
+                            الآن</a>
                     </div>
                 </div>
-
                 <!-- Channel 6 -->
-                <div class="channel-card bg-gray-700 rounded-lg overflow-hidden">
-                    <img src="https://sadaa.tv/wp-content/uploads/2025/05/s8.jpeg" alt="قناة 6"
-                        class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">قناة صدى السادسة</h3>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">شاهد الآن</a>
+                <div
+                    class="channel-card-modern min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-xl relative overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="./assets/imgs/سمر.png" alt="قناة 6"
+                        class="w-full h-48 object-cover transition-all duration-300 group-hover:brightness-75">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#6d55a1]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white drop-shadow">قناة صدى السادسة</h3>
+                        <a href="#"
+                            class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full font-semibold shadow-lg transition-colors mb-2">شاهد
+                            الآن</a>
                     </div>
                 </div>
-
                 <!-- Channel 7 -->
-                <div class="channel-card bg-gray-700 rounded-lg overflow-hidden">
-                    <img src="https://sadaa.tv/wp-content/uploads/2025/05/s9.jpeg" alt="قناة 7"
-                        class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">قناة صدى السابعة</h3>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">شاهد الآن</a>
+                <div
+                    class="channel-card-modern min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-xl relative overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="./assets/imgs/صحراء.png" alt="قناة 7"
+                        class="w-full h-48 object-cover transition-all duration-300 group-hover:brightness-75">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#6d55a1]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white drop-shadow">قناة صدى السابعة</h3>
+                        <a href="#"
+                            class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full font-semibold shadow-lg transition-colors mb-2">شاهد
+                            الآن</a>
                     </div>
                 </div>
-
                 <!-- Channel 8 -->
-                <div class="channel-card bg-gray-700 rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300x200/38f9d7/ffffff?text=قناة+8" alt="قناة 8"
-                        class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">قناة صدى الثامنة</h3>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">شاهد الآن</a>
+                <div
+                    class="channel-card-modern min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-xl relative overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="./assets/imgs/صحراء2.png" alt="قناة 8"
+                        class="w-full h-48 object-cover transition-all duration-300 group-hover:brightness-75">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#6d55a1]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white drop-shadow">قناة صدى الثامنة</h3>
+                        <a href="#"
+                            class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full font-semibold shadow-lg transition-colors mb-2">شاهد
+                            الآن</a>
                     </div>
                 </div>
-
                 <!-- Channel 9 -->
-                <div class="channel-card bg-gray-700 rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300x200/fa709a/ffffff?text=قناة+9" alt="قناة 9"
-                        class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">قناة صدى التاسعة</h3>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">شاهد الآن</a>
+                <div
+                    class="channel-card-modern min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-xl relative overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="./assets/imgs/صدي الاعلامية1.png" alt="قناة 9"
+                        class="w-full h-48 object-cover transition-all duration-300 group-hover:brightness-75">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#6d55a1]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white drop-shadow">قناة صدى التاسعة</h3>
+                        <a href="#"
+                            class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full font-semibold shadow-lg transition-colors mb-2">شاهد
+                            الآن</a>
                     </div>
                 </div>
-
                 <!-- Channel 10 -->
-                <div class="channel-card bg-gray-700 rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300x200/fee140/ffffff?text=قناة+10" alt="قناة 10"
-                        class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">قناة صدى العاشرة</h3>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">شاهد الآن</a>
+                <div
+                    class="channel-card-modern min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-xl relative overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="./assets/imgs/صدي الاعلامية2.png" alt="قناة 10"
+                        class="w-full h-48 object-cover transition-all duration-300 group-hover:brightness-75">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#6d55a1]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white drop-shadow">قناة صدى العاشرة</h3>
+                        <a href="#"
+                            class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full font-semibold shadow-lg transition-colors mb-2">شاهد
+                            الآن</a>
                     </div>
                 </div>
-
                 <!-- Channel 11 -->
-                <div class="channel-card bg-gray-700 rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300x200/a8edea/ffffff?text=قناة+11" alt="قناة 11"
-                        class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">قناة صدى الحادية عشر</h3>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">شاهد الآن</a>
+                <div
+                    class="channel-card-modern min-w-[260px] md:min-w-0 bg-white rounded-3xl shadow-xl relative overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="./assets/imgs/صدي الصحة1.png" alt="قناة 11"
+                        class="w-full h-48 object-cover transition-all duration-300 group-hover:brightness-75">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#6d55a1]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                        <h3 class="text-xl font-bold mb-2 text-white drop-shadow">قناة صدى الحادية عشر</h3>
+                        <a href="#"
+                            class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full font-semibold shadow-lg transition-colors mb-2">شاهد
+                            الآن</a>
                     </div>
                 </div>
-
-               
             </div>
         </div>
     </section>
 
     <!-- Gulf Countries Flags -->
-    <section class="py-16 bg-gray-900">
+    <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12">دول مجلس التعاون الخليجي</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-[#6d55a1]">قنوات الدول الخليجية</h2>
             <div class="swiper gulfFlagsSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="#" class="flag-item block">
-                            <img src="https://via.placeholder.com/120x80/ff0000/ffffff?text=عُمان" alt="عُمان"
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Oman.svg" alt="عُمان"
                                 class="rounded-lg shadow-lg w-full">
                             <p class="text-center mt-2">عُمان</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#" class="flag-item block">
-                            <img src="https://via.placeholder.com/120x80/00ff00/ffffff?text=الإمارات" alt="الإمارات"
-                                class="rounded-lg shadow-lg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/250px-Flag_of_the_United_Arab_Emirates.svg.png"
+                                alt="الإمارات" class="rounded-lg shadow-lg">
                             <p class="text-center mt-2">الإمارات</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#" class="flag-item block">
-                            <img src="https://m.media-amazon.com/images/I/61eIGogZI2L._UF1000,1000_QL80_.jpg" alt="السعودية"
-                                class="rounded-lg shadow-lg w-full">
+                            <img src="https://m.media-amazon.com/images/I/61eIGogZI2L._UF1000,1000_QL80_.jpg"
+                                alt="السعودية" class="rounded-lg shadow-lg w-full">
                             <p class="text-center mt-2">السعودية</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#" class="flag-item block">
-                            <img src="https://via.placeholder.com/120x80/ffff00/ffffff?text=الكويت" alt="الكويت"
-                                class="rounded-lg shadow-lg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Kuwait.svg/1200px-Flag_of_Kuwait.svg.png"
+                                alt="الكويت" class="rounded-lg shadow-lg">
                             <p class="text-center mt-2">الكويت</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#" class="flag-item block">
-                            <img src="https://via.placeholder.com/120x80/ff00ff/ffffff?text=قطر" alt="قطر"
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg" alt="قطر"
                                 class="rounded-lg shadow-lg">
                             <p class="text-center mt-2">قطر</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#" class="flag-item block">
-                            <img src="https://via.placeholder.com/120x80/00ffff/ffffff?text=البحرين" alt="البحرين"
-                                class="rounded-lg shadow-lg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg"
+                                alt="البحرين" class="rounded-lg shadow-lg">
                             <p class="text-center mt-2">البحرين</p>
                         </a>
                     </div>
@@ -395,57 +363,57 @@
     </section>
 
     <!-- Other Arab Countries Flags -->
-    <section class="py-16 bg-gray-800">
+    <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12">الدول العربية الأخرى</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-[#6d55a1]">قنوات الدول العربية</h2>
             <div class="swiper arabFlagsSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="#" class="flag-item block">
-                            <img src="https://via.placeholder.com/120x80/ff6600/ffffff?text=مصر" alt="مصر"
-                                class="rounded-lg shadow-lg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/250px-Flag_of_Egypt.svg.png"
+                                alt="مصر" class="rounded-lg shadow-lg">
                             <p class="text-center mt-2">مصر</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#" class="flag-item block">
-                            <img src="https://via.placeholder.com/120x80/6600ff/ffffff?text=الأردن" alt="الأردن"
-                                class="rounded-lg shadow-lg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/250px-Flag_of_Jordan.svg.png"
+                                alt="الأردن" class="rounded-lg shadow-lg">
                             <p class="text-center mt-2">الأردن</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#" class="flag-item block">
-                            <img src="https://via.placeholder.com/120x80/00ff66/ffffff?text=لبنان" alt="لبنان"
-                                class="rounded-lg shadow-lg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/250px-Flag_of_Lebanon.svg.png"
+                                alt="لبنان" class="rounded-lg shadow-lg">
                             <p class="text-center mt-2">لبنان</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#" class="flag-item block">
-                            <img src="https://via.placeholder.com/120x80/ff0066/ffffff?text=سوريا" alt="سوريا"
-                                class="rounded-lg shadow-lg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Flag_of_Syria_%282025-%29.svg/1200px-Flag_of_Syria_%282025-%29.svg.png"
+                                alt="سوريا" class="rounded-lg shadow-lg">
                             <p class="text-center mt-2">سوريا</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#" class="flag-item block">
-                            <img src="https://via.placeholder.com/120x80/66ff00/ffffff?text=العراق" alt="العراق"
-                                class="rounded-lg shadow-lg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Iraq.svg/250px-Flag_of_Iraq.svg.png"
+                                alt="العراق" class="rounded-lg shadow-lg">
                             <p class="text-center mt-2">العراق</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#" class="flag-item block">
-                            <img src="https://via.placeholder.com/120x80/0066ff/ffffff?text=المغرب" alt="المغرب"
-                                class="rounded-lg shadow-lg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/250px-Flag_of_Morocco.svg.png"
+                                alt="المغرب" class="rounded-lg shadow-lg">
                             <p class="text-center mt-2">المغرب</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="#" class="flag-item block">
-                            <img src="https://via.placeholder.com/120x80/ff6600/ffffff?text=الجزائر" alt="الجزائر"
-                                class="rounded-lg shadow-lg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/250px-Flag_of_Algeria.svg.png"
+                                alt="الجزائر" class="rounded-lg shadow-lg">
                             <p class="text-center mt-2">الجزائر</p>
                         </a>
                     </div>
@@ -463,70 +431,68 @@
     </section>
 
     <!-- Share Your Talent Section -->
-    <section class="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
+    <section class="py-16  " style="background-image: url('./assets/imgs/Slide\ صدى\ 2.png');">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-6">شارك موهبتك مع العالم</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">
+            <h2 class="text-4xl font-bold mb-6 text-[#6d55a1]">شارك موهبتك مع العالم</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto text-white">
                 انضم إلينا وشارك موهبتك مع جمهورنا الواسع. نحن نبحث عن المواهب المميزة في جميع المجالات
             </p>
-            <a href="#"
-                class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-block">
+            <a href="talent.html"
+                class="bg-[#6d55a1] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors inline-block">
                 سجل موهبتك الآن
             </a>
         </div>
     </section>
 
     <!-- Success Partners Section -->
-    <section class="py-16 bg-gray-900">
+    <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12">شركاؤنا في النجاح</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-[#6d55a1]">شركاؤنا في النجاح</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
                 <a href="#" class="block">
-                    <img src="https://via.placeholder.com/150x80/333333/ffffff?text=شريك+1" alt="شريك 1"
-                        class="w-full h-20 object-contain bg-gray-700 rounded-lg p-2 hover:bg-gray-600 transition-colors">
+                    <img src="./assets/imgs/صدي4.png" alt="شريك 1"
+                        class="w-full h-20 object-contain bg-gray-100 rounded-lg p-2 hover:bg-gray-200 transition-colors">
                 </a>
+
                 <a href="#" class="block">
-                    <img src="https://via.placeholder.com/150x80/333333/ffffff?text=شريك+2" alt="شريك 2"
-                        class="w-full h-20 object-contain bg-gray-700 rounded-lg p-2 hover:bg-gray-600 transition-colors">
+                    <img src="./assets/imgs/صدي4.png" alt="شريك 1"
+                        class="w-full h-20 object-contain bg-gray-100 rounded-lg p-2 hover:bg-gray-200 transition-colors">
                 </a>
+
                 <a href="#" class="block">
-                    <img src="https://via.placeholder.com/150x80/333333/ffffff?text=شريك+3" alt="شريك 3"
-                        class="w-full h-20 object-contain bg-gray-700 rounded-lg p-2 hover:bg-gray-600 transition-colors">
+                    <img src="./assets/imgs/صدي4.png" alt="شريك 1"
+                        class="w-full h-20 object-contain bg-gray-100 rounded-lg p-2 hover:bg-gray-200 transition-colors">
                 </a>
+
                 <a href="#" class="block">
-                    <img src="https://via.placeholder.com/150x80/333333/ffffff?text=شريك+4" alt="شريك 4"
-                        class="w-full h-20 object-contain bg-gray-700 rounded-lg p-2 hover:bg-gray-600 transition-colors">
+                    <img src="./assets/imgs/صدي4.png" alt="شريك 1"
+                        class="w-full h-20 object-contain bg-gray-100 rounded-lg p-2 hover:bg-gray-200 transition-colors">
                 </a>
-                <a href="#" class="block">
-                    <img src="https://via.placeholder.com/150x80/333333/ffffff?text=شريك+5" alt="شريك 5"
-                        class="w-full h-20 object-contain bg-gray-700 rounded-lg p-2 hover:bg-gray-600 transition-colors">
-                </a>
-                <a href="#" class="block">
-                    <img src="https://via.placeholder.com/150x80/333333/ffffff?text=شريك+6" alt="شريك 6"
-                        class="w-full h-20 object-contain bg-gray-700 rounded-lg p-2 hover:bg-gray-600 transition-colors">
-                </a>
+
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black py-12">
+    <footer class="bg-gray-100 py-12 border-t border-gray-200">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Company Info -->
                 <div>
-                    <h3 class="text-2xl font-bold text-blue-400 mb-4">صدى</h3>
-                    <p class="text-gray-400 mb-4">
+                    <div class="text-2xl font-bold text-blue-600">
+                        <img src="./assets/imgs/صدي4.png" alt="logo" class="w-20 h-10">
+                    </div>
+                    <p class="text-gray-700 mb-4">
                         قنوات الأقمار الصناعية الرائدة في المنطقة، نقدم محتوى متنوع ومميز لجميع أفراد العائلة.
                     </p>
                     <div class="flex space-x-4 space-x-reverse">
-                        <a href="#" class="text-blue-400 hover:text-blue-300">
+                        <a href="#" class="text-blue-600 hover:text-blue-400">
                             <i class="fab fa-facebook text-xl"></i>
                         </a>
-                        <a href="#" class="text-pink-400 hover:text-pink-300">
+                        <a href="#" class="text-pink-600 hover:text-pink-400">
                             <i class="fab fa-instagram text-xl"></i>
                         </a>
-                        <a href="#" class="text-red-400 hover:text-red-300">
+                        <a href="#" class="text-red-600 hover:text-red-400">
                             <i class="fab fa-youtube text-xl"></i>
                         </a>
                     </div>
@@ -534,38 +500,39 @@
 
                 <!-- Quick Links -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">روابط سريعة</h4>
+                    <h4 class="text-lg font-semibold mb-4 text-[#6d55a1]">روابط سريعة</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">الرئيسية</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">من نحن</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">اتصل بنا</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">اعلن معنا</a></li>
+                        <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-700 hover:text-blue-600 transition-colors">من نحن</a></li>
+                        <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition-colors">اتصل بنا</a></li>
+                        <li><a href="advertise.html" class="text-gray-700 hover:text-blue-600 transition-colors">اعلن معنا</a></li>
                     </ul>
                 </div>
 
                 <!-- Services -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">خدماتنا</h4>
+                    <h4 class="text-lg font-semibold mb-4 text-[#6d55a1]">خدماتنا</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">شركاؤنا</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">شارك موهبتك</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">سياسة الخصوصية</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">ما الجديد</a></li>
+                        <li><a href="partners.html" class="text-gray-700 hover:text-blue-600 transition-colors">شركاؤنا</a></li>
+                        <li><a href="talent.html" class="text-gray-700 hover:text-blue-600 transition-colors">شارك موهبتك</a></li>
+                        <li><a href="privacy.html" class="text-gray-700 hover:text-blue-600 transition-colors">سياسة الخصوصية</a>
+                        </li>
+                        <li><a href="whats-new.html" class="text-gray-700 hover:text-blue-600 transition-colors">ما الجديد</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact Info -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">معلومات الاتصال</h4>
-                    <div class="space-y-2 text-gray-400">
+                    <h4 class="text-lg font-semibold mb-4 text-[#6d55a1]">معلومات الاتصال</h4>
+                    <div class="space-y-2 text-gray-700">
                         <p><i class="fas fa-phone ml-2"></i> +968 1234 5678</p>
                         <p><i class="fas fa-envelope ml-2"></i> info@sada.com</p>
-                        <p><i class="fas fa-map-marker-alt ml-2"></i> مسقط، عُمان</p>
+                        <p><i class="fas fa-map-marker-alt ml-2"></i> السعوديه - الرياض</p>
                     </div>
                 </div>
             </div>
 
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <div class="border-t border-gray-200 mt-8 pt-8 text-center text-gray-500">
                 <p>&copy; 2024 صدى. جميع الحقوق محفوظة.</p>
             </div>
         </div>

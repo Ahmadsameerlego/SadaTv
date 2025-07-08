@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 spaceBetween: 30,
             },
             1024: {
-                slidesPerView: 6,
+                slidesPerView: 8,
                 spaceBetween: 30,
             },
         }
@@ -118,16 +118,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Add scroll effect to navbar
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('nav');
-        if (window.scrollY > 100) {
-            navbar.classList.add('bg-gray-900', 'shadow-lg');
-            navbar.classList.remove('bg-gray-800');
-        } else {
-            navbar.classList.remove('bg-gray-900', 'shadow-lg');
-            navbar.classList.add('bg-gray-800');
-        }
-    });
+    // window.addEventListener('scroll', function() {
+    //     const navbar = document.querySelector('nav');
+    //     if (window.scrollY > 100) {
+    //         navbar.classList.add('bg-gray-900', 'shadow-lg');
+    //         navbar.classList.remove('bg-gray-800');
+    //     } else {
+    //         navbar.classList.remove('bg-gray-900', 'shadow-lg');
+    //         navbar.classList.add('bg-gray-800');
+    //     }
+    // });
 
     // Add loading animation to channel cards
     const channelCards = document.querySelectorAll('.channel-card');

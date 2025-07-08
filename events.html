@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفعاليات | صدى</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="bg-white text-[#6d55a1]">
+    <!-- Header -->
+    <header class="bg-white py-2 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center text-sm">
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <a href="#" class="text-blue-600 hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-pink-600 hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-red-600 hover:text-red-400"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="flex items-center space-x-6 space-x-reverse">
+                    <span class="text-gray-700"><i class="fas fa-phone ml-2"></i> +968 1234 5678</span>
+                    <span class="text-gray-700"><i class="fas fa-map-marker-alt ml-2"></i> السعوديه - الرياض</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="bg-white py-4 sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">
+                    <a href="index.html"><img src="./assets/imgs/صدي4.png" alt="logo" class="w-20 h-10 inline"></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 space-x-reverse">
+                    <a href="index.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">الرئيسية</a>
+                    <a href="advertise.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">اعلن معنا</a>
+                    <a href="partners.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شركاؤنا</a>
+                    <a href="whats-new.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">ما الجديد</a>
+                    <a href="podcasts.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">البودكاست</a>
+                    <a href="opinion.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شارك رأيك (كأس
+                        العالم 2034)</a>
+                    <a href="talent.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شارك موهبتك</a>
+                    <a href="privacy.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">سياسة
+                        الخصوصية</a>
+                    <a href="about.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">من نحن</a>
+                    <a href="contact.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">اتصل بنا</a>
+                    <a href="events.html"
+                        class="text-[#6d55a1] hover:text-blue-600 transition-colors font-bold">الفعاليات</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-[#6d55a1]">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu"
+            class="navbar-mobile fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 border-l border-gray-200"
+            style="display:none;">
+            <div class="p-4">
+                <div class="flex justify-between items-center mb-6">
+                    <div class="text-xl font-bold text-blue-600">صدى</div>
+                    <button id="close-menu" class="text-[#6d55a1]">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">الرئيسية</a>
+                    <a href="about.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">من نحن</a>
+                    <a href="contact.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">اتصل بنا</a>
+                    <a href="advertise.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">اعلن معنا</a>
+                    <a href="partners.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شركاؤنا</a>
+                    <a href="talent.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شارك موهبتك</a>
+                    <a href="privacy.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">سياسة
+                        الخصوصية</a>
+                    <a href="whats-new.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">ما الجديد</a>
+                    <a href="podcasts.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">البودكاست</a>
+                    <a href="opinion.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شارك رأيك (كأس
+                        العالم 2034)</a>
+                    <a href="events.html"
+                        class="text-[#6d55a1] hover:text-blue-600 transition-colors font-bold">الفعاليات</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-2 py-10">
+        <h1 class="text-2xl md:text-3xl font-bold text-center mb-8">الفعاليات</h1>
+        <p class="text-center text-gray-600 mb-8">خبراء المعارض و المؤتمرات – نحن نضمن لك جودة خدماتنا</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Event Card Example -->
+            <a href="adventure.html"
+                class="block bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden group border border-gray-100">
+                <div class="flex items-center justify-center h-32 bg-gray-50">
+                    <img src="./assets/imgs/event1.png" alt="معرض الصحة والجمال"
+                        class="object-contain h-20 w-auto group-hover:scale-105 transition">
+                </div>
+                <div class="p-4 text-center">
+                    <div class="font-bold mb-1">معرض الصحة والجمال</div>
+                    <div class="text-gray-500 text-xs">2019</div>
+                </div>
+            </a>
+            <a href="adventure.html"
+                class="block bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden group border border-gray-100">
+                <div class="flex items-center justify-center h-32 bg-gray-50">
+                    <img src="./assets/imgs/event2.png" alt="معرض رمضانيات"
+                        class="object-contain h-20 w-auto group-hover:scale-105 transition">
+                </div>
+                <div class="p-4 text-center">
+                    <div class="font-bold mb-1">معرض رمضانيات</div>
+                    <div class="text-gray-500 text-xs">2019</div>
+                </div>
+            </a>
+            <a href="adventure.html"
+                class="block bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden group border border-gray-100">
+                <div class="flex items-center justify-center h-32 bg-gray-50">
+                    <img src="./assets/imgs/event3.png" alt="معرض التذوق"
+                        class="object-contain h-20 w-auto group-hover:scale-105 transition">
+                </div>
+                <div class="p-4 text-center">
+                    <div class="font-bold mb-1">معرض التذوق</div>
+                    <div class="text-gray-500 text-xs">2019</div>
+                </div>
+            </a>
+            <a href="adventure.html"
+                class="block bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden group border border-gray-100">
+                <div class="flex items-center justify-center h-32 bg-gray-50">
+                    <img src="./assets/imgs/event2.png" alt="معرض رمضانيات"
+                        class="object-contain h-20 w-auto group-hover:scale-105 transition">
+                </div>
+                <div class="p-4 text-center">
+                    <div class="font-bold mb-1">معرض رمضانيات</div>
+                    <div class="text-gray-500 text-xs">2021</div>
+                </div>
+            </a>
+            <a href="adventure.html"
+                class="block bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden group border border-gray-100">
+                <div class="flex items-center justify-center h-32 bg-gray-50">
+                    <img src="./assets/imgs/event4.png" alt="معرض العائلة السعودي"
+                        class="object-contain h-20 w-auto group-hover:scale-105 transition">
+                </div>
+                <div class="p-4 text-center">
+                    <div class="font-bold mb-1">معرض العائلة السعودي</div>
+                    <div class="text-gray-500 text-xs">2021</div>
+                </div>
+            </a>
+            <a href="adventure.html"
+                class="block bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden group border border-gray-100">
+                <div class="flex items-center justify-center h-32 bg-gray-50">
+                    <img src="./assets/imgs/event5.png" alt="معرض أماسي"
+                        class="object-contain h-20 w-auto group-hover:scale-105 transition">
+                </div>
+                <div class="p-4 text-center">
+                    <div class="font-bold mb-1">معرض أماسي</div>
+                    <div class="text-gray-500 text-xs">2021</div>
+                </div>
+            </a>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12 border-t border-gray-200 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">صدى</h3>
+                    <p class="text-gray-700 mb-4">قنوات الأقمار الصناعية الرائدة في المنطقة، نقدم محتوى متنوع ومميز
+                        لجميع أفراد العائلة.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="text-blue-600 hover:text-blue-400"><i
+                                class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-pink-600 hover:text-pink-400"><i
+                                class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-red-600 hover:text-red-400"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-[#6d55a1]">روابط سريعة</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html"
+                                class="text-gray-700 hover:text-blue-600 transition-colors">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-700 hover:text-blue-600 transition-colors">من نحن</a>
+                        </li>
+                        <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition-colors">اتصل
+                                بنا</a></li>
+                        <li><a href="advertise.html" class="text-gray-700 hover:text-blue-600 transition-colors">اعلن
+                                معنا</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-[#6d55a1]">خدماتنا</h4>
+                    <ul class="space-y-2">
+                        <li><a href="partners.html"
+                                class="text-gray-700 hover:text-blue-600 transition-colors">شركاؤنا</a></li>
+                        <li><a href="talent.html" class="text-gray-700 hover:text-blue-600 transition-colors">شارك
+                                موهبتك</a></li>
+                        <li><a href="privacy.html" class="text-gray-700 hover:text-blue-600 transition-colors">سياسة
+                                الخصوصية</a></li>
+                        <li><a href="whats-new.html" class="text-gray-700 hover:text-blue-600 transition-colors">ما
+                                الجديد</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-[#6d55a1]">معلومات الاتصال</h4>
+                    <div class="space-y-2 text-gray-700">
+                        <p><i class="fas fa-phone ml-2"></i> +968 1234 5678</p>
+                        <p><i class="fas fa-envelope ml-2"></i> info@sada.com</p>
+                        <p><i class="fas fa-map-marker-alt ml-2"></i> السعوديه - الرياض</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 صدى. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init({ once: true });</script>
+    <script>
+        document.getElementById('mobile-menu-btn').onclick = function () {
+            document.getElementById('mobile-menu').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        };
+        document.getElementById('close-menu').onclick = function () {
+            document.getElementById('mobile-menu').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        };
+    </script>
+</body>
+
+</html>

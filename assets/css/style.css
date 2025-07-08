@@ -1,0 +1,249 @@
+body {
+    font-family: 'Cairo', sans-serif !important; 
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-slide {
+    position: relative;
+    height: 600px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: right;
+    z-index: 1;
+    width: 40vw !important;
+}
+
+.channel-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+}
+
+.channel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.channel-card img {
+    object-fit: contain;
+    filter: brightness(.5);
+}
+
+.flag-item {
+    transition: transform 0.3s ease;
+    height: 100px;
+    width: 100% !important;
+    border-radius: 10px;
+
+}
+
+.flag-item img {
+    height: 100px;
+    width: 100% !important;
+    border-radius: 10px;
+}
+
+.flag-item:hover {
+    transform: scale(1.1);
+}
+
+.navbar-mobile {
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.navbar-mobile.active {
+    transform: translateX(0);
+}
+
+.channels-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.channels-carousel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.channel-card-modern {
+    padding: 15px;
+}
+
+.channel-card-modern img {
+    object-fit: contain;
+    filter: brightness(0.9);
+}
+
+.hero-content {
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.hero-advertise {
+    background: url('./assets/imgs/slide1.jpg') center/cover no-repeat;
+    min-height: 220px;
+    position: relative;
+}
+
+.hero-advertise::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(109, 85, 161, 0.7);
+}
+
+.hero-advertise-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive styles for all screens down to 320px */
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+  .hero-slide {
+    height: 220px;
+  }
+  .hero-content {
+    width: 90vw !important;
+    left: 5%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .hero-content h1, .hero-content .text-5xl, .hero-content .text-4xl {
+    font-size: 1.3rem !important;
+  }
+  .hero-content p, .hero-content .text-xl {
+    font-size: 1rem !important;
+  }
+  .channel-card, .channel-card-modern {
+    padding: 8px;
+    min-width: 180px;
+    max-width: 100%;
+  }
+  .channel-card img, .channel-card-modern img {
+    height: 80px !important;
+    min-height: 60px;
+  }
+  .flag-item, .flag-item img {
+    height: 50px !important;
+    min-height: 40px;
+  }
+  .navbar-mobile {
+    width: 100vw !important;
+    max-width: 100vw;
+    font-size: 1rem;
+  }
+  nav .text-2xl, nav .font-bold {
+    font-size: 1.1rem !important;
+  }
+  .swiper-slide {
+    font-size: 14px;
+  }
+  .grid, .channels-carousel {
+    gap: 8px !important;
+  }
+  .rounded-3xl, .rounded-xl, .rounded-lg {
+    border-radius: 10px !important;
+  }
+  .p-4, .p-5, .p-6, .py-12, .py-16, .px-8, .px-4 {
+    padding: 8px !important;
+  }
+  .h-48, .h-32, .h-20, .h-24 {
+    height: 80px !important;
+  }
+  .text-4xl, .text-3xl, .text-2xl, .text-xl, .text-lg {
+    font-size: 1.1rem !important;
+  }
+  .text-base, .text-md, .text-sm {
+    font-size: 0.95rem !important;
+  }
+  button, .btn, .rounded-full, .rounded-lg {
+    font-size: 0.95rem !important;
+    padding: 6px 12px !important;
+  }
+  .footer, footer {
+    font-size: 0.95rem;
+    padding: 12px 0 !important;
+  }
+  .max-w-7xl, .max-w-5xl, .max-w-3xl, .container {
+    max-width: 100vw !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  .grid-cols-4, .md\:grid-cols-4, .md\:grid-cols-3, .md\:grid-cols-6 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  .grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: 11px;
+  }
+  .hero-content {
+    padding: 4px;
+    border-radius: 6px;
+  }
+  .channel-card, .channel-card-modern {
+    padding: 4px;
+    min-width: 120px;
+  }
+  .channel-card img, .channel-card-modern img {
+    height: 50px !important;
+  }
+  .flag-item, .flag-item img {
+    height: 30px !important;
+  }
+  .h-48, .h-32, .h-20, .h-24 {
+    height: 50px !important;
+  }
+  .p-4, .p-5, .p-6, .py-12, .py-16, .px-8, .px-4 {
+    padding: 4px !important;
+  }
+  .text-4xl, .text-3xl, .text-2xl, .text-xl, .text-lg {
+    font-size: 0.95rem !important;
+  }
+  .text-base, .text-md, .text-sm {
+    font-size: 0.85rem !important;
+  }
+  button, .btn, .rounded-full, .rounded-lg {
+    font-size: 0.85rem !important;
+    padding: 4px 8px !important;
+  }
+}
+
+/* End responsive styles */
