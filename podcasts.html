@@ -8,8 +8,8 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <!-- Google Fonts - Cairo -->
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+    <!-- Google Fonts - Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
@@ -42,7 +42,7 @@
     </style>
 </head>
 
-<body class="bg-white text-[#6d55a1]" >
+<body class="bg-white text-bg-">
     <!-- Header -->
     <header class="bg-white py-2 border-b border-gray-200">
         <div class="container mx-auto px-4">
@@ -53,8 +53,11 @@
                     <a href="#" class="text-red-600 hover:text-red-400"><i class="fab fa-youtube"></i></a>
                 </div>
                 <div class="flex items-center space-x-6 space-x-reverse">
-                    <span class="text-gray-700"><i class="fas fa-phone ml-2"></i> +968 1234 5678</span>
-                    <span class="text-gray-700"><i class="fas fa-map-marker-alt ml-2"></i> السعوديه - الرياض</span>
+                    <a href="advertise.html"
+                        class="bg-[#6d55a1] hover:bg-blue-700 text-white px-3 py-2 rounded-lg text-md font-semibold transition-colors flex items-center gap-2">
+                        <i class="fas fa-flag"></i>
+                        للاعلان علي قنواتنا
+                    </a>
                 </div>
             </div>
         </div>
@@ -71,13 +74,14 @@
                     <!-- <a href="about.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">من نحن</a> -->
                     <!-- <a href="contact.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">اتصل بنا</a> -->
                     <a href="advertise.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">اعلن معنا</a>
-                    <a href="partners.html"
-                        class="text-[#6d55a1] hover:text-blue-600 transition-colors ">شركاؤنا</a>
+                    <a href="partners.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors ">شركاؤنا</a>
                     <!-- <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شارك موهبتك</a> -->
                     <!-- <a href="#" class="text-[#6d55a1] hover:text-blue-600 transition-colors">سياسة الخصوصية</a> -->
                     <a href="whats-new.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">ما الجديد</a>
-                    <a href="podcasts.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors font-bold">البودكاست</a>
-                    <a href="opinion.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شارك رأيك (كأس العالم 2034)</a>
+                    <a href="podcasts.html"
+                        class="text-[#6d55a1] hover:text-blue-600 transition-colors font-bold">البودكاست</a>
+                    <a href="opinion.html" class="text-[#6d55a1] hover:text-blue-600 transition-colors">شارك رأيك (كأس
+                        العالم 2034)</a>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden text-[#6d55a1]">
                     <i class="fas fa-bars text-xl"></i>
@@ -111,8 +115,8 @@
         </div>
     </nav>
 
-     <!-- Hero Section -->
-     <section class="hero-partners flex items-center justify-center relative">
+    <!-- Hero Section -->
+    <section class="hero-partners flex items-center justify-center relative">
         <div class="hero-partners-content text-center text-white py-12 w-full" style="z-index:1;">
             <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-down">البودكاست</h1>
         </div>
@@ -125,53 +129,50 @@
             <!-- Podcast Card Example -->
             <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 relative"
                 data-aos="fade-up">
-                <img src="./assets/imgs/slide صدى 1.png" alt="بودكاست 1" class="w-full h-48 object-cover">
-                <div class="p-5">
+                <img src="./assets/imgs/slide صدى 1.png" alt="بودكاست 1" class="w-full h-60 object-cover">
+                <div class="p-5 flex justify-center items-center flex-col">
                     <h2 class="text-xl font-semibold mb-2 text-sada">عنوان البودكاست 1</h2>
-                    <p class="text-gray-600 mb-4">وصف مختصر عن هذه الحلقة من البودكاست لجذب المستمعين.</p>
                     <button
-                        class="bg-sada text-white px-4 py-2 rounded-full flex items-center gap-2 hover:bg-sada-dark transition">
+                        class="bg-[#6d55a1] flex justify-center items-center text-white px-4 py-2 rounded-full flex items-center gap-2 hover:bg--dark transition">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M14.752 11.168l-6.518-3.759A1 1 0 007 8.118v7.764a1 1 0 001.234.97l6.518-1.878A1 1 0 0016 13.882V10.12a1 1 0 00-1.248-.952z" />
                         </svg>
-                        استمع الآن
+                        <a href="podcast-details.html"> استمع الآن </a>
                     </button>
                 </div>
             </div>
             <!-- Repeat for more podcast cards (use placeholder images/titles) -->
             <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 relative"
                 data-aos="fade-up" data-aos-delay="100">
-                <img src="./assets/imgs/Slide صدى 2.png" alt="بودكاست 2" class="w-full h-48 object-cover">
-                <div class="p-5">
+                <img src="./assets/imgs/Slide صدى 2.png" alt="بودكاست 2" class="w-full h-60 object-cover">
+                <div class="p-5 flex justify-center items-center flex-col">
                     <h2 class="text-xl font-semibold mb-2 text-sada">عنوان البودكاست 2</h2>
-                    <p class="text-gray-600 mb-4">وصف مختصر عن هذه الحلقة من البودكاست لجذب المستمعين.</p>
                     <button
-                        class="bg-sada text-white px-4 py-2 rounded-full flex items-center gap-2 hover:bg-sada-dark transition">
+                        class="bg-[#6d55a1] flex justify-center items-center text-white px-4 py-2 rounded-full flex items-center gap-2 hover:bg--dark transition">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M14.752 11.168l-6.518-3.759A1 1 0 007 8.118v7.764a1 1 0 001.234.97l6.518-1.878A1 1 0 0016 13.882V10.12a1 1 0 00-1.248-.952z" />
                         </svg>
-                        استمع الآن
+                        <a href="podcast-details.html"> استمع الآن </a>
                     </button>
                 </div>
             </div>
             <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 relative"
                 data-aos="fade-up" data-aos-delay="200">
-                <img src="./assets/imgs/slide صدى 1.png" alt="بودكاست 3" class="w-full h-48 object-cover">
-                <div class="p-5">
+                <img src="./assets/imgs/slide صدى 1.png" alt="بودكاست 3" class="w-full h-60 object-cover">
+                <div class="p-5 flex justify-center items-center flex-col">
                     <h2 class="text-xl font-semibold mb-2 text-sada">عنوان البودكاست 3</h2>
-                    <p class="text-gray-600 mb-4">وصف مختصر عن هذه الحلقة من البودكاست لجذب المستمعين.</p>
                     <button
-                        class="bg-sada text-white px-4 py-2 rounded-full flex items-center gap-2 hover:bg-sada-dark transition">
+                        class="bg-[#6d55a1] flex justify-center items-center text-white px-4 py-2 rounded-full flex items-center gap-2 hover:bg--dark transition">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M14.752 11.168l-6.518-3.759A1 1 0 007 8.118v7.764a1 1 0 001.234.97l6.518-1.878A1 1 0 0016 13.882V10.12a1 1 0 00-1.248-.952z" />
                         </svg>
-                        استمع الآن
+                        <a href="podcast-details.html"> استمع الآن </a>
                     </button>
                 </div>
             </div>
@@ -205,7 +206,7 @@
                 </div>
                 <!-- Quick Links -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-[#6d55a1]">روابط سريعة</h4>
+                    <h4 class="text-lg font-semibold mb-4 text-bg-">روابط سريعة</h4>
                     <ul class="space-y-2">
                         <li><a href="index.html"
                                 class="text-gray-700 hover:text-blue-600 transition-colors">الرئيسية</a></li>
@@ -219,7 +220,7 @@
                 </div>
                 <!-- Services -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-[#6d55a1]">خدماتنا</h4>
+                    <h4 class="text-lg font-semibold mb-4 text-bg-">خدماتنا</h4>
                     <ul class="space-y-2">
                         <li><a href="partners.html"
                                 class="text-gray-700 hover:text-blue-600 transition-colors">شركاؤنا</a></li>
@@ -233,7 +234,7 @@
                 </div>
                 <!-- Contact Info -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-[#6d55a1]">معلومات الاتصال</h4>
+                    <h4 class="text-lg font-semibold mb-4 text-bg-">معلومات الاتصال</h4>
                     <div class="space-y-2 text-gray-700">
                         <p><i class="fas fa-phone ml-2"></i> +968 1234 5678</p>
                         <p><i class="fas fa-envelope ml-2"></i> info@sada.com</p>
@@ -250,7 +251,7 @@
     <script src="script.js" defer></script>
     <script>
         AOS.init();
-        
+
     </script>
     <script>
         // Mobile menu toggle
